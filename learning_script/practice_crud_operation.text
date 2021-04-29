@@ -1,0 +1,58 @@
+Create project: 
+composer create-project laravel/laravle crud-operation
+
+Create Controller:
+php artisan make:controller UserController
+
+Create Model and migrate:
+php artisan make:model Users -m
+[By default users table model already exists, in that case need just update database connectivity on .env file then run migrate command.]
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=crud_operation
+DB_USERNAME=root
+DB_PASSWORD=root
+
+Command: 
+php artisan migrate
+
+
+Id CommandLine
+  -- -----------
+   1 php artisan make:model Images
+   2 php artisan make:model Information -m
+   3 php artisan migrate
+   4 php artisan migrate:rollback
+   5 php artisan migrate
+   6 php artisan migrate:fresh
+   7 history
+   8 php artisan make:controller InformationController -r
+   9 php artisan route:list
+  10 php artisan route:list
+  11 php artisan route:list
+  12 php artisan route:list
+  13 php artisan route:list
+  14 php artisan route:list -path=info
+  15 php artisan route:list --path=info
+  16 history
+  17 php artisan make:resource InformationResource
+  18 php artisan route:list --path=info
+
+
+
+JWT Auth:
+
+Id CommandLine
+  -- -----------
+   1 php artisan make:controller AuthController
+   2 php artisan make:model -mcr
+   3 php artisan make:model Todo -mcr
+   4 php artisan migrate
+   5 php artisan serve
+
+ Id CommandLine
+  -- -----------
+   1 php artisan make:factory TodoFactory
+   2 php artisan tinker
