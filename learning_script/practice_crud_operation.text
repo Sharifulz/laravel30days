@@ -55,4 +55,22 @@ Id CommandLine
  Id CommandLine
   -- -----------
    1 php artisan make:factory TodoFactory
+class InformationFactory extends Factory:
+public function definition()
+    {
+        return [
+            'name' => $this->faker->name,
+            'age' => 25,
+            'dob' => now(),
+            'blood_group' => 'O+ve'
+            ];
+    }
+
    2 php artisan tinker
+   3 Information::factory()->count(5)->create()
+
+   API CALL:
+
+   https://www.digitalocean.com/community/tutorials/vuejs-rest-api-axios
+   Dummy API
+   http://jsonplaceholder.typicode.com/posts
