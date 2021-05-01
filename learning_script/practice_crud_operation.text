@@ -74,3 +74,6 @@ public function definition()
    https://www.digitalocean.com/community/tutorials/vuejs-rest-api-axios
    Dummy API
    http://jsonplaceholder.typicode.com/posts
+
+   Lazy Load
+   https://blog.logrocket.com/vue-lazy-loading-components-code-splitting/#:~:text=vue%20file.,very%20small%20at%20initial%20load.
